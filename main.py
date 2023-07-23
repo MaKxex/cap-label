@@ -38,12 +38,12 @@ template_str = """
         #for $num in $numbers
             <svg width="100" height="100" viewBox="0 0 50 50" preserveAspectRatio="xMidYMid meet">
 
-                <circle class="circle" cx="25" cy="25" r="23" stroke="#007bff" />
+                <circle class="circle" cx="25" cy="25" r="23" stroke="#333" />
 
-                <circle class="circle" cx="25" cy="25" r="6.8" stroke="#007bff" />
+                <circle class="circle" cx="25" cy="25" r="6.8" stroke="#333" />
         
                 <path id="textPath"       d="M12,25 A 12,13 0 1,1 38,25" fill="none" />
-                <path id="textPathBottom" d="M12,28 A 13,14 0 1,0 38,27" fill="none" />
+                <path id="textPathBottom" d="M38,25 A 13,15 0 1,1 12,25" fill="none" />
 
                 <text>
                     <textPath xlink:href="#textPath" startOffset="50%">
@@ -51,7 +51,7 @@ template_str = """
                     </textPath>
                 </text>
 
-                <text>
+                <text class="second-text">
                     <textPath xlink:href="#textPathBottom" startOffset="50%">
                         $num
                     </textPath>
